@@ -1,12 +1,15 @@
 # Build and Release Folders
+.DS_Store
 bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
-
+truffle-config.js
+package-lock.json
 # Other files and folders
 .settings/
-
+node_modules/
+secret
 # Executables
 *.swf
 *.air
