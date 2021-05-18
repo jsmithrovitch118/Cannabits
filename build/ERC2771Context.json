@@ -21,7 +21,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"forwarder\",\"type\":\"address\"}],\"name\":\"isTrustedForwarder\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/joesmithrovitch/Documents/cannabits/contracts/metatx/ERC2771Context.sol\":\"ERC2771Context\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":2000},\"remappings\":[]},\"sources\":{\"/Users/joesmithrovitch/Documents/cannabits/contracts/metatx/ERC2771Context.sol\":{\"keccak256\":\"0xcbd29e09c58348d07be436939e9e9390abbd6bcd4e184b7ab01cfd122cb372c9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://faf4d7e67bc35254b0f201a1a24d79ae19e098a53f57a20127788d6fd26c32c4\",\"dweb:/ipfs/QmYVP1FFj88veg4kynbcpDDDV5kETfKmbaN8HNN7BBmmGX\"]},\"/Users/joesmithrovitch/Documents/cannabits/contracts/utils/Context.sol\":{\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc2bfdea0d2562c76fb3c4cf70a86c6ba25c5a30e8f8515c95aafdf8383f8395\",\"dweb:/ipfs/QmTbFya18786ckJfLYUoWau9jBTKfmWnWm5XSViWvB7PXN\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"forwarder\",\"type\":\"address\"}],\"name\":\"isTrustedForwarder\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/joesmithrovitch/Documents/Cannabits/contracts/metatx/ERC2771Context.sol\":\"ERC2771Context\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":2000},\"remappings\":[]},\"sources\":{\"/Users/joesmithrovitch/Documents/Cannabits/contracts/metatx/ERC2771Context.sol\":{\"keccak256\":\"0xcbd29e09c58348d07be436939e9e9390abbd6bcd4e184b7ab01cfd122cb372c9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://faf4d7e67bc35254b0f201a1a24d79ae19e098a53f57a20127788d6fd26c32c4\",\"dweb:/ipfs/QmYVP1FFj88veg4kynbcpDDDV5kETfKmbaN8HNN7BBmmGX\"]},\"/Users/joesmithrovitch/Documents/Cannabits/contracts/utils/Context.sol\":{\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc2bfdea0d2562c76fb3c4cf70a86c6ba25c5a30e8f8515c95aafdf8383f8395\",\"dweb:/ipfs/QmTbFya18786ckJfLYUoWau9jBTKfmWnWm5XSViWvB7PXN\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -30,12 +30,12 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\nimport \"../utils/Context.sol\";\n\n/*\n * @dev Context variant with ERC2771 support.\n */\nabstract contract ERC2771Context is Context {\n    address immutable _trustedForwarder;\n\n    constructor(address trustedForwarder) {\n        _trustedForwarder = trustedForwarder;\n    }\n\n    function isTrustedForwarder(address forwarder) public view virtual returns(bool) {\n        return forwarder == _trustedForwarder;\n    }\n\n    function _msgSender() internal view virtual override returns (address sender) {\n        if (isTrustedForwarder(msg.sender)) {\n            // The assembly code is more direct than the Solidity version using `abi.decode`.\n            assembly { sender := shr(96, calldataload(sub(calldatasize(), 20))) }\n        } else {\n            return super._msgSender();\n        }\n    }\n\n    function _msgData() internal view virtual override returns (bytes calldata) {\n        if (isTrustedForwarder(msg.sender)) {\n            return msg.data[:msg.data.length-20];\n        } else {\n            return super._msgData();\n        }\n    }\n}\n",
-  "sourcePath": "/Users/joesmithrovitch/Documents/cannabits/contracts/metatx/ERC2771Context.sol",
+  "sourcePath": "/Users/joesmithrovitch/Documents/Cannabits/contracts/metatx/ERC2771Context.sol",
   "ast": {
-    "absolutePath": "/Users/joesmithrovitch/Documents/cannabits/contracts/metatx/ERC2771Context.sol",
+    "absolutePath": "/Users/joesmithrovitch/Documents/Cannabits/contracts/metatx/ERC2771Context.sol",
     "exportedSymbols": {
       "Context": [
-        10166
+        10058
       ],
       "ERC2771Context": [
         1960
@@ -57,12 +57,12 @@
         "src": "33:23:89"
       },
       {
-        "absolutePath": "/Users/joesmithrovitch/Documents/cannabits/contracts/utils/Context.sol",
+        "absolutePath": "/Users/joesmithrovitch/Documents/Cannabits/contracts/utils/Context.sol",
         "file": "../utils/Context.sol",
         "id": 1887,
         "nodeType": "ImportDirective",
         "scope": 1961,
-        "sourceUnit": 10167,
+        "sourceUnit": 10059,
         "src": "58:30:89",
         "symbolAliases": [],
         "unitAlias": ""
@@ -75,7 +75,7 @@
               "id": 1888,
               "name": "Context",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 10166,
+              "referencedDeclaration": 10058,
               "src": "179:7:89"
             },
             "id": 1889,
@@ -84,14 +84,14 @@
           }
         ],
         "contractDependencies": [
-          10166
+          10058
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 1960,
         "linearizedBaseContracts": [
           1960,
-          10166
+          10058
         ],
         "name": "ERC2771Context",
         "nodeType": "ContractDefinition",
@@ -364,7 +364,7 @@
           },
           {
             "baseFunctions": [
-              10154
+              10046
             ],
             "body": {
               "id": 1931,
@@ -463,7 +463,7 @@
                             "lValueRequested": false,
                             "memberName": "_msgSender",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 10154,
+                            "referencedDeclaration": 10046,
                             "src": "811:16:89",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -654,7 +654,7 @@
           },
           {
             "baseFunctions": [
-              10165
+              10057
             ],
             "body": {
               "id": 1958,
@@ -753,7 +753,7 @@
                             "lValueRequested": false,
                             "memberName": "_msgData",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 10165,
+                            "referencedDeclaration": 10057,
                             "src": "1062:14:89",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_bytes_calldata_ptr_$",
@@ -979,10 +979,10 @@
     "src": "33:1065:89"
   },
   "legacyAST": {
-    "absolutePath": "/Users/joesmithrovitch/Documents/cannabits/contracts/metatx/ERC2771Context.sol",
+    "absolutePath": "/Users/joesmithrovitch/Documents/Cannabits/contracts/metatx/ERC2771Context.sol",
     "exportedSymbols": {
       "Context": [
-        10166
+        10058
       ],
       "ERC2771Context": [
         1960
@@ -1004,12 +1004,12 @@
         "src": "33:23:89"
       },
       {
-        "absolutePath": "/Users/joesmithrovitch/Documents/cannabits/contracts/utils/Context.sol",
+        "absolutePath": "/Users/joesmithrovitch/Documents/Cannabits/contracts/utils/Context.sol",
         "file": "../utils/Context.sol",
         "id": 1887,
         "nodeType": "ImportDirective",
         "scope": 1961,
-        "sourceUnit": 10167,
+        "sourceUnit": 10059,
         "src": "58:30:89",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1022,7 +1022,7 @@
               "id": 1888,
               "name": "Context",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 10166,
+              "referencedDeclaration": 10058,
               "src": "179:7:89"
             },
             "id": 1889,
@@ -1031,14 +1031,14 @@
           }
         ],
         "contractDependencies": [
-          10166
+          10058
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 1960,
         "linearizedBaseContracts": [
           1960,
-          10166
+          10058
         ],
         "name": "ERC2771Context",
         "nodeType": "ContractDefinition",
@@ -1311,7 +1311,7 @@
           },
           {
             "baseFunctions": [
-              10154
+              10046
             ],
             "body": {
               "id": 1931,
@@ -1410,7 +1410,7 @@
                             "lValueRequested": false,
                             "memberName": "_msgSender",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 10154,
+                            "referencedDeclaration": 10046,
                             "src": "811:16:89",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -1601,7 +1601,7 @@
           },
           {
             "baseFunctions": [
-              10165
+              10057
             ],
             "body": {
               "id": 1958,
@@ -1700,7 +1700,7 @@
                             "lValueRequested": false,
                             "memberName": "_msgData",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 10165,
+                            "referencedDeclaration": 10057,
                             "src": "1062:14:89",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_bytes_calldata_ptr_$",
@@ -1931,7 +1931,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-05-11T00:32:50.556Z",
+  "updatedAt": "2021-05-18T16:10:54.896Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

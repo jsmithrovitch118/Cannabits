@@ -345,7 +345,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"ERC721 Token that can be irreversibly burned (destroyed).\",\"kind\":\"dev\",\"methods\":{\"approve(address,uint256)\":{\"details\":\"See {IERC721-approve}.\"},\"balanceOf(address)\":{\"details\":\"See {IERC721-balanceOf}.\"},\"burn(uint256)\":{\"details\":\"Burns `tokenId`. See {ERC721-_burn}. Requirements: - The caller must own `tokenId` or be an approved operator.\"},\"getApproved(uint256)\":{\"details\":\"See {IERC721-getApproved}.\"},\"isApprovedForAll(address,address)\":{\"details\":\"See {IERC721-isApprovedForAll}.\"},\"name()\":{\"details\":\"See {IERC721Metadata-name}.\"},\"ownerOf(uint256)\":{\"details\":\"See {IERC721-ownerOf}.\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"See {IERC721-safeTransferFrom}.\"},\"safeTransferFrom(address,address,uint256,bytes)\":{\"details\":\"See {IERC721-safeTransferFrom}.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"See {IERC721-setApprovalForAll}.\"},\"supportsInterface(bytes4)\":{\"details\":\"See {IERC165-supportsInterface}.\"},\"symbol()\":{\"details\":\"See {IERC721Metadata-symbol}.\"},\"tokenURI(uint256)\":{\"details\":\"See {IERC721Metadata-tokenURI}.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"See {IERC721-transferFrom}.\"}},\"title\":\"ERC721 Burnable Token\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/joesmithrovitch/Documents/cannabits/contracts/token/ERC721/extensions/ERC721Burnable.sol\":\"ERC721Burnable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":2000},\"remappings\":[]},\"sources\":{\"/Users/joesmithrovitch/Documents/cannabits/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0x8d1cabca557cb77d97d801d674f0dacc33659e1430cdd34f91ae5d033fc3d93f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://379879e94763b61c652f914da987a603fb1fec35645a1d6b8022413cf1c3a467\",\"dweb:/ipfs/QmVkFoHVN6XWztbJDHrWfMCRPV4QsbFGj6QPZYeMjQRfhr\"]},\"/Users/joesmithrovitch/Documents/cannabits/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0xc1c941ad1e580b4623007305921efe2f26fc7320a4edc226234dd707c658a428\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://473e11d739868e0d9f48254ccf84ba63290d6a2321d59a37b74c244a27f9cad7\",\"dweb:/ipfs/QmUGzDmecP936jzgM7SYyGwR1YgBGsveoHHJTbDfB8jbGF\"]},\"/Users/joesmithrovitch/Documents/cannabits/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x96877bb2eb8ca360e949ee1bd77b47a14e92e42f79897c350f088f87a3c231d4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://48593d699a4ef6b5bd2efb20d37320e69303fd27d4b59a2b6b8a8e563e608456\",\"dweb:/ipfs/QmdAPS8uLrzPJEeFZyJVkwTtaL3KB9jo9wJm1UcoJP55wT\"]},\"/Users/joesmithrovitch/Documents/cannabits/contracts/token/ERC721/extensions/ERC721Burnable.sol\":{\"keccak256\":\"0x7481c284b0ff5983d3f1784f0ceae1ec397f8c8938bc60552b19889cc057aee8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c834984a08e9fcb78657f3e6bc1209463581c4660fb7a0d7b785b1aec52490bc\",\"dweb:/ipfs/Qman8u5hNWrE34xNinnSgNqMXcsyPsHh5992b4G7iM2xFX\"]},\"/Users/joesmithrovitch/Documents/cannabits/contracts/token/ERC721/extensions/IERC721Enumerable.sol\":{\"keccak256\":\"0xccb7e6475afcb1c5cb13b3fbf1329c10b93620a9b66393388066683915271a78\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://df5776161e3226ac31bfb919dfe5f42e173a08293fadb4ffa90ffb55e76869d7\",\"dweb:/ipfs/QmXtKfvWj1v6oha8urbnw4RmjSpmQjZsGGqK5qk5trK4nH\"]},\"/Users/joesmithrovitch/Documents/cannabits/contracts/token/ERC721/extensions/IERC721Metadata.sol\":{\"keccak256\":\"0xb8d11e77eb1ed34a33720edb551d7d6a6b0eee2bfaa40a7024020e1fdf879b16\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c583283c838cc624a96a69eaa823fa92ac5294ec88d417e266c09ea091e0ae62\",\"dweb:/ipfs/QmNdzitXaFADaxooWpB4WsckkDyr4j6GQRxBjyKXsvEeXv\"]},\"/Users/joesmithrovitch/Documents/cannabits/contracts/utils/Address.sol\":{\"keccak256\":\"0x069b2631bb5b5193a58ccf7a06266c7361bd2c20095667af4402817605627f45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6a4c96fafff76deda5697c3c5c98cade6e6e1b178254544c106bf360c079ce4e\",\"dweb:/ipfs/QmXmxubE3jnatFgZuN8ay1VV6hZ8WRmhvUjNpeVjki15HX\"]},\"/Users/joesmithrovitch/Documents/cannabits/contracts/utils/Context.sol\":{\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc2bfdea0d2562c76fb3c4cf70a86c6ba25c5a30e8f8515c95aafdf8383f8395\",\"dweb:/ipfs/QmTbFya18786ckJfLYUoWau9jBTKfmWnWm5XSViWvB7PXN\"]},\"/Users/joesmithrovitch/Documents/cannabits/contracts/utils/Strings.sol\":{\"keccak256\":\"0x456e9b3a2bfe189b5249857f624f4139e59331db518483b456c4e587a20552e0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1123c9545decc48a011370ebab4bf53dda98524fa21f9498e68851ba8f0ffc0f\",\"dweb:/ipfs/QmUpgMg8EFDnv87ePKUjXxXpJT3qwHRj9VDNSnRxu7T9sy\"]},\"/Users/joesmithrovitch/Documents/cannabits/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0x5718c5df9bd67ac68a796961df938821bb5dc0cd4c6118d77e9145afb187409b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d10e1d9b26042424789246603906ad06143bf9a928f4e99de8b5e3bdc662f549\",\"dweb:/ipfs/Qmejonoaj5MLekPus229rJQHcC6E9dz2xorjHJR84fMfmn\"]},\"/Users/joesmithrovitch/Documents/cannabits/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0xa28007762d9da9db878dd421960c8cb9a10471f47ab5c1b3309bfe48e9e79ff4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://796ab6e88af7bf0e78def0f059310c903af6a312b565344e0ff524a0f26e81c6\",\"dweb:/ipfs/QmcsVgLgzWdor3UnAztUkXKNGcysm1MPneWksF72AvnwBx\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"ERC721 Token that can be irreversibly burned (destroyed).\",\"kind\":\"dev\",\"methods\":{\"approve(address,uint256)\":{\"details\":\"See {IERC721-approve}.\"},\"balanceOf(address)\":{\"details\":\"See {IERC721-balanceOf}.\"},\"burn(uint256)\":{\"details\":\"Burns `tokenId`. See {ERC721-_burn}. Requirements: - The caller must own `tokenId` or be an approved operator.\"},\"getApproved(uint256)\":{\"details\":\"See {IERC721-getApproved}.\"},\"isApprovedForAll(address,address)\":{\"details\":\"See {IERC721-isApprovedForAll}.\"},\"name()\":{\"details\":\"See {IERC721Metadata-name}.\"},\"ownerOf(uint256)\":{\"details\":\"See {IERC721-ownerOf}.\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"See {IERC721-safeTransferFrom}.\"},\"safeTransferFrom(address,address,uint256,bytes)\":{\"details\":\"See {IERC721-safeTransferFrom}.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"See {IERC721-setApprovalForAll}.\"},\"supportsInterface(bytes4)\":{\"details\":\"See {IERC165-supportsInterface}.\"},\"symbol()\":{\"details\":\"See {IERC721Metadata-symbol}.\"},\"tokenURI(uint256)\":{\"details\":\"See {IERC721Metadata-tokenURI}.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"See {IERC721-transferFrom}.\"}},\"title\":\"ERC721 Burnable Token\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/joesmithrovitch/Documents/Cannabits/contracts/token/ERC721/extensions/ERC721Burnable.sol\":\"ERC721Burnable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":2000},\"remappings\":[]},\"sources\":{\"/Users/joesmithrovitch/Documents/Cannabits/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0x8d1cabca557cb77d97d801d674f0dacc33659e1430cdd34f91ae5d033fc3d93f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://379879e94763b61c652f914da987a603fb1fec35645a1d6b8022413cf1c3a467\",\"dweb:/ipfs/QmVkFoHVN6XWztbJDHrWfMCRPV4QsbFGj6QPZYeMjQRfhr\"]},\"/Users/joesmithrovitch/Documents/Cannabits/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0xc1c941ad1e580b4623007305921efe2f26fc7320a4edc226234dd707c658a428\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://473e11d739868e0d9f48254ccf84ba63290d6a2321d59a37b74c244a27f9cad7\",\"dweb:/ipfs/QmUGzDmecP936jzgM7SYyGwR1YgBGsveoHHJTbDfB8jbGF\"]},\"/Users/joesmithrovitch/Documents/Cannabits/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x96877bb2eb8ca360e949ee1bd77b47a14e92e42f79897c350f088f87a3c231d4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://48593d699a4ef6b5bd2efb20d37320e69303fd27d4b59a2b6b8a8e563e608456\",\"dweb:/ipfs/QmdAPS8uLrzPJEeFZyJVkwTtaL3KB9jo9wJm1UcoJP55wT\"]},\"/Users/joesmithrovitch/Documents/Cannabits/contracts/token/ERC721/extensions/ERC721Burnable.sol\":{\"keccak256\":\"0x7481c284b0ff5983d3f1784f0ceae1ec397f8c8938bc60552b19889cc057aee8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c834984a08e9fcb78657f3e6bc1209463581c4660fb7a0d7b785b1aec52490bc\",\"dweb:/ipfs/Qman8u5hNWrE34xNinnSgNqMXcsyPsHh5992b4G7iM2xFX\"]},\"/Users/joesmithrovitch/Documents/Cannabits/contracts/token/ERC721/extensions/IERC721Enumerable.sol\":{\"keccak256\":\"0xccb7e6475afcb1c5cb13b3fbf1329c10b93620a9b66393388066683915271a78\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://df5776161e3226ac31bfb919dfe5f42e173a08293fadb4ffa90ffb55e76869d7\",\"dweb:/ipfs/QmXtKfvWj1v6oha8urbnw4RmjSpmQjZsGGqK5qk5trK4nH\"]},\"/Users/joesmithrovitch/Documents/Cannabits/contracts/token/ERC721/extensions/IERC721Metadata.sol\":{\"keccak256\":\"0xb8d11e77eb1ed34a33720edb551d7d6a6b0eee2bfaa40a7024020e1fdf879b16\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c583283c838cc624a96a69eaa823fa92ac5294ec88d417e266c09ea091e0ae62\",\"dweb:/ipfs/QmNdzitXaFADaxooWpB4WsckkDyr4j6GQRxBjyKXsvEeXv\"]},\"/Users/joesmithrovitch/Documents/Cannabits/contracts/utils/Address.sol\":{\"keccak256\":\"0x069b2631bb5b5193a58ccf7a06266c7361bd2c20095667af4402817605627f45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6a4c96fafff76deda5697c3c5c98cade6e6e1b178254544c106bf360c079ce4e\",\"dweb:/ipfs/QmXmxubE3jnatFgZuN8ay1VV6hZ8WRmhvUjNpeVjki15HX\"]},\"/Users/joesmithrovitch/Documents/Cannabits/contracts/utils/Context.sol\":{\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc2bfdea0d2562c76fb3c4cf70a86c6ba25c5a30e8f8515c95aafdf8383f8395\",\"dweb:/ipfs/QmTbFya18786ckJfLYUoWau9jBTKfmWnWm5XSViWvB7PXN\"]},\"/Users/joesmithrovitch/Documents/Cannabits/contracts/utils/Strings.sol\":{\"keccak256\":\"0x456e9b3a2bfe189b5249857f624f4139e59331db518483b456c4e587a20552e0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1123c9545decc48a011370ebab4bf53dda98524fa21f9498e68851ba8f0ffc0f\",\"dweb:/ipfs/QmUpgMg8EFDnv87ePKUjXxXpJT3qwHRj9VDNSnRxu7T9sy\"]},\"/Users/joesmithrovitch/Documents/Cannabits/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0x5718c5df9bd67ac68a796961df938821bb5dc0cd4c6118d77e9145afb187409b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d10e1d9b26042424789246603906ad06143bf9a928f4e99de8b5e3bdc662f549\",\"dweb:/ipfs/Qmejonoaj5MLekPus229rJQHcC6E9dz2xorjHJR84fMfmn\"]},\"/Users/joesmithrovitch/Documents/Cannabits/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0xa28007762d9da9db878dd421960c8cb9a10471f47ab5c1b3309bfe48e9e79ff4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://796ab6e88af7bf0e78def0f059310c903af6a312b565344e0ff524a0f26e81c6\",\"dweb:/ipfs/QmcsVgLgzWdor3UnAztUkXKNGcysm1MPneWksF72AvnwBx\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -354,50 +354,50 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.0;\n\nimport \"../ERC721.sol\";\nimport \"../../../utils/Context.sol\";\n\n/**\n * @title ERC721 Burnable Token\n * @dev ERC721 Token that can be irreversibly burned (destroyed).\n */\nabstract contract ERC721Burnable is Context, ERC721 {\n    /**\n     * @dev Burns `tokenId`. See {ERC721-_burn}.\n     *\n     * Requirements:\n     *\n     * - The caller must own `tokenId` or be an approved operator.\n     */\n    function burn(uint256 tokenId) public virtual {\n        //solhint-disable-next-line max-line-length\n        require(_isApprovedOrOwner(_msgSender(), tokenId), \"ERC721Burnable: caller is not owner nor approved\");\n        _burn(tokenId);\n    }\n}\n",
-  "sourcePath": "/Users/joesmithrovitch/Documents/cannabits/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+  "sourcePath": "/Users/joesmithrovitch/Documents/Cannabits/contracts/token/ERC721/extensions/ERC721Burnable.sol",
   "ast": {
-    "absolutePath": "/Users/joesmithrovitch/Documents/cannabits/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+    "absolutePath": "/Users/joesmithrovitch/Documents/Cannabits/contracts/token/ERC721/extensions/ERC721Burnable.sol",
     "exportedSymbols": {
       "Address": [
-        10058
+        9950
       ],
       "Context": [
-        10166
+        10058
       ],
       "ERC165": [
-        11224
+        11116
       ],
       "ERC721": [
-        7476
+        7368
       ],
       "ERC721Burnable": [
-        7640
+        7532
       ],
       "IERC165": [
-        11550
+        11442
       ],
       "IERC721": [
-        7592
+        7484
       ],
       "IERC721Enumerable": [
-        8174
+        8066
       ],
       "IERC721Metadata": [
-        8201
+        8093
       ],
       "IERC721Receiver": [
-        7610
+        7502
       ],
       "Strings": [
-        10541
+        10433
       ]
     },
-    "id": 7641,
+    "id": 7533,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7612,
+        "id": 7504,
         "literals": [
           "solidity",
           "^",
@@ -408,23 +408,23 @@
         "src": "33:23:129"
       },
       {
-        "absolutePath": "/Users/joesmithrovitch/Documents/cannabits/contracts/token/ERC721/ERC721.sol",
+        "absolutePath": "/Users/joesmithrovitch/Documents/Cannabits/contracts/token/ERC721/ERC721.sol",
         "file": "../ERC721.sol",
-        "id": 7613,
+        "id": 7505,
         "nodeType": "ImportDirective",
-        "scope": 7641,
-        "sourceUnit": 7477,
+        "scope": 7533,
+        "sourceUnit": 7369,
         "src": "58:23:129",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/joesmithrovitch/Documents/cannabits/contracts/utils/Context.sol",
+        "absolutePath": "/Users/joesmithrovitch/Documents/Cannabits/contracts/utils/Context.sol",
         "file": "../../../utils/Context.sol",
-        "id": 7614,
+        "id": 7506,
         "nodeType": "ImportDirective",
-        "scope": 7641,
-        "sourceUnit": 10167,
+        "scope": 7533,
+        "sourceUnit": 10059,
         "src": "82:36:129",
         "symbolAliases": [],
         "unitAlias": ""
@@ -434,61 +434,61 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 7616,
+              "id": 7508,
               "name": "Context",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 10166,
+              "referencedDeclaration": 10058,
               "src": "262:7:129"
             },
-            "id": 7617,
+            "id": 7509,
             "nodeType": "InheritanceSpecifier",
             "src": "262:7:129"
           },
           {
             "baseName": {
-              "id": 7618,
+              "id": 7510,
               "name": "ERC721",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 7476,
+              "referencedDeclaration": 7368,
               "src": "271:6:129"
             },
-            "id": 7619,
+            "id": 7511,
             "nodeType": "InheritanceSpecifier",
             "src": "271:6:129"
           }
         ],
         "contractDependencies": [
-          7476,
-          7592,
-          8201,
-          10166,
-          11224,
-          11550
+          7368,
+          7484,
+          8093,
+          10058,
+          11116,
+          11442
         ],
         "contractKind": "contract",
         "documentation": {
-          "id": 7615,
+          "id": 7507,
           "nodeType": "StructuredDocumentation",
           "src": "120:105:129",
           "text": " @title ERC721 Burnable Token\n @dev ERC721 Token that can be irreversibly burned (destroyed)."
         },
         "fullyImplemented": false,
-        "id": 7640,
+        "id": 7532,
         "linearizedBaseContracts": [
-          7640,
-          7476,
-          8201,
-          7592,
-          11224,
-          11550,
-          10166
+          7532,
+          7368,
+          8093,
+          7484,
+          11116,
+          11442,
+          10058
         ],
         "name": "ERC721Burnable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 7638,
+              "id": 7530,
               "nodeType": "Block",
               "src": "497:195:129",
               "statements": [
@@ -501,18 +501,18 @@
                             "arguments": [],
                             "expression": {
                               "argumentTypes": [],
-                              "id": 7627,
+                              "id": 7519,
                               "name": "_msgSender",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 10154,
+                              "referencedDeclaration": 10046,
                               "src": "586:10:129",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
                                 "typeString": "function () view returns (address)"
                               }
                             },
-                            "id": 7628,
+                            "id": 7520,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -528,11 +528,11 @@
                             }
                           },
                           {
-                            "id": 7629,
+                            "id": 7521,
                             "name": "tokenId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7622,
+                            "referencedDeclaration": 7514,
                             "src": "600:7:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -551,18 +551,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 7626,
+                          "id": 7518,
                           "name": "_isApprovedOrOwner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7155,
+                          "referencedDeclaration": 7047,
                           "src": "567:18:129",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$_t_uint256_$returns$_t_bool_$",
                             "typeString": "function (address,uint256) view returns (bool)"
                           }
                         },
-                        "id": 7630,
+                        "id": 7522,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -579,7 +579,7 @@
                       },
                       {
                         "hexValue": "4552433732314275726e61626c653a2063616c6c6572206973206e6f74206f776e6572206e6f7220617070726f766564",
-                        "id": 7631,
+                        "id": 7523,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -605,7 +605,7 @@
                           "typeString": "literal_string \"ERC721Burnable: caller is not owner nor approved\""
                         }
                       ],
-                      "id": 7625,
+                      "id": 7517,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -619,7 +619,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 7632,
+                    "id": 7524,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -634,7 +634,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 7633,
+                  "id": 7525,
                   "nodeType": "ExpressionStatement",
                   "src": "559:102:129"
                 },
@@ -642,11 +642,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 7635,
+                        "id": 7527,
                         "name": "tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7622,
+                        "referencedDeclaration": 7514,
                         "src": "677:7:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -661,18 +661,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 7634,
+                      "id": 7526,
                       "name": "_burn",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7307,
+                      "referencedDeclaration": 7199,
                       "src": "671:5:129",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 7636,
+                    "id": 7528,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -687,36 +687,36 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 7637,
+                  "id": 7529,
                   "nodeType": "ExpressionStatement",
                   "src": "671:14:129"
                 }
               ]
             },
             "documentation": {
-              "id": 7620,
+              "id": 7512,
               "nodeType": "StructuredDocumentation",
               "src": "284:162:129",
               "text": " @dev Burns `tokenId`. See {ERC721-_burn}.\n Requirements:\n - The caller must own `tokenId` or be an approved operator."
             },
             "functionSelector": "42966c68",
-            "id": 7639,
+            "id": 7531,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "burn",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7623,
+              "id": 7515,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7622,
+                  "id": 7514,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7639,
+                  "scope": 7531,
                   "src": "465:15:129",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -725,7 +725,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7621,
+                    "id": 7513,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "465:7:129",
@@ -740,67 +740,67 @@
               "src": "464:17:129"
             },
             "returnParameters": {
-              "id": 7624,
+              "id": 7516,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "497:0:129"
             },
-            "scope": 7640,
+            "scope": 7532,
             "src": "451:241:129",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "public"
           }
         ],
-        "scope": 7641,
+        "scope": 7533,
         "src": "226:468:129"
       }
     ],
     "src": "33:662:129"
   },
   "legacyAST": {
-    "absolutePath": "/Users/joesmithrovitch/Documents/cannabits/contracts/token/ERC721/extensions/ERC721Burnable.sol",
+    "absolutePath": "/Users/joesmithrovitch/Documents/Cannabits/contracts/token/ERC721/extensions/ERC721Burnable.sol",
     "exportedSymbols": {
       "Address": [
-        10058
+        9950
       ],
       "Context": [
-        10166
+        10058
       ],
       "ERC165": [
-        11224
+        11116
       ],
       "ERC721": [
-        7476
+        7368
       ],
       "ERC721Burnable": [
-        7640
+        7532
       ],
       "IERC165": [
-        11550
+        11442
       ],
       "IERC721": [
-        7592
+        7484
       ],
       "IERC721Enumerable": [
-        8174
+        8066
       ],
       "IERC721Metadata": [
-        8201
+        8093
       ],
       "IERC721Receiver": [
-        7610
+        7502
       ],
       "Strings": [
-        10541
+        10433
       ]
     },
-    "id": 7641,
+    "id": 7533,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7612,
+        "id": 7504,
         "literals": [
           "solidity",
           "^",
@@ -811,23 +811,23 @@
         "src": "33:23:129"
       },
       {
-        "absolutePath": "/Users/joesmithrovitch/Documents/cannabits/contracts/token/ERC721/ERC721.sol",
+        "absolutePath": "/Users/joesmithrovitch/Documents/Cannabits/contracts/token/ERC721/ERC721.sol",
         "file": "../ERC721.sol",
-        "id": 7613,
+        "id": 7505,
         "nodeType": "ImportDirective",
-        "scope": 7641,
-        "sourceUnit": 7477,
+        "scope": 7533,
+        "sourceUnit": 7369,
         "src": "58:23:129",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/joesmithrovitch/Documents/cannabits/contracts/utils/Context.sol",
+        "absolutePath": "/Users/joesmithrovitch/Documents/Cannabits/contracts/utils/Context.sol",
         "file": "../../../utils/Context.sol",
-        "id": 7614,
+        "id": 7506,
         "nodeType": "ImportDirective",
-        "scope": 7641,
-        "sourceUnit": 10167,
+        "scope": 7533,
+        "sourceUnit": 10059,
         "src": "82:36:129",
         "symbolAliases": [],
         "unitAlias": ""
@@ -837,61 +837,61 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 7616,
+              "id": 7508,
               "name": "Context",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 10166,
+              "referencedDeclaration": 10058,
               "src": "262:7:129"
             },
-            "id": 7617,
+            "id": 7509,
             "nodeType": "InheritanceSpecifier",
             "src": "262:7:129"
           },
           {
             "baseName": {
-              "id": 7618,
+              "id": 7510,
               "name": "ERC721",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 7476,
+              "referencedDeclaration": 7368,
               "src": "271:6:129"
             },
-            "id": 7619,
+            "id": 7511,
             "nodeType": "InheritanceSpecifier",
             "src": "271:6:129"
           }
         ],
         "contractDependencies": [
-          7476,
-          7592,
-          8201,
-          10166,
-          11224,
-          11550
+          7368,
+          7484,
+          8093,
+          10058,
+          11116,
+          11442
         ],
         "contractKind": "contract",
         "documentation": {
-          "id": 7615,
+          "id": 7507,
           "nodeType": "StructuredDocumentation",
           "src": "120:105:129",
           "text": " @title ERC721 Burnable Token\n @dev ERC721 Token that can be irreversibly burned (destroyed)."
         },
         "fullyImplemented": false,
-        "id": 7640,
+        "id": 7532,
         "linearizedBaseContracts": [
-          7640,
-          7476,
-          8201,
-          7592,
-          11224,
-          11550,
-          10166
+          7532,
+          7368,
+          8093,
+          7484,
+          11116,
+          11442,
+          10058
         ],
         "name": "ERC721Burnable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 7638,
+              "id": 7530,
               "nodeType": "Block",
               "src": "497:195:129",
               "statements": [
@@ -904,18 +904,18 @@
                             "arguments": [],
                             "expression": {
                               "argumentTypes": [],
-                              "id": 7627,
+                              "id": 7519,
                               "name": "_msgSender",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 10154,
+                              "referencedDeclaration": 10046,
                               "src": "586:10:129",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
                                 "typeString": "function () view returns (address)"
                               }
                             },
-                            "id": 7628,
+                            "id": 7520,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -931,11 +931,11 @@
                             }
                           },
                           {
-                            "id": 7629,
+                            "id": 7521,
                             "name": "tokenId",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 7622,
+                            "referencedDeclaration": 7514,
                             "src": "600:7:129",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -954,18 +954,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 7626,
+                          "id": 7518,
                           "name": "_isApprovedOrOwner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7155,
+                          "referencedDeclaration": 7047,
                           "src": "567:18:129",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$_t_uint256_$returns$_t_bool_$",
                             "typeString": "function (address,uint256) view returns (bool)"
                           }
                         },
-                        "id": 7630,
+                        "id": 7522,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -982,7 +982,7 @@
                       },
                       {
                         "hexValue": "4552433732314275726e61626c653a2063616c6c6572206973206e6f74206f776e6572206e6f7220617070726f766564",
-                        "id": 7631,
+                        "id": 7523,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1008,7 +1008,7 @@
                           "typeString": "literal_string \"ERC721Burnable: caller is not owner nor approved\""
                         }
                       ],
-                      "id": 7625,
+                      "id": 7517,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -1022,7 +1022,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 7632,
+                    "id": 7524,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1037,7 +1037,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 7633,
+                  "id": 7525,
                   "nodeType": "ExpressionStatement",
                   "src": "559:102:129"
                 },
@@ -1045,11 +1045,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 7635,
+                        "id": 7527,
                         "name": "tokenId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7622,
+                        "referencedDeclaration": 7514,
                         "src": "677:7:129",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1064,18 +1064,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 7634,
+                      "id": 7526,
                       "name": "_burn",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7307,
+                      "referencedDeclaration": 7199,
                       "src": "671:5:129",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 7636,
+                    "id": 7528,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1090,36 +1090,36 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 7637,
+                  "id": 7529,
                   "nodeType": "ExpressionStatement",
                   "src": "671:14:129"
                 }
               ]
             },
             "documentation": {
-              "id": 7620,
+              "id": 7512,
               "nodeType": "StructuredDocumentation",
               "src": "284:162:129",
               "text": " @dev Burns `tokenId`. See {ERC721-_burn}.\n Requirements:\n - The caller must own `tokenId` or be an approved operator."
             },
             "functionSelector": "42966c68",
-            "id": 7639,
+            "id": 7531,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "burn",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7623,
+              "id": 7515,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7622,
+                  "id": 7514,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7639,
+                  "scope": 7531,
                   "src": "465:15:129",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1128,7 +1128,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7621,
+                    "id": 7513,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "465:7:129",
@@ -1143,19 +1143,19 @@
               "src": "464:17:129"
             },
             "returnParameters": {
-              "id": 7624,
+              "id": 7516,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "497:0:129"
             },
-            "scope": 7640,
+            "scope": 7532,
             "src": "451:241:129",
             "stateMutability": "nonpayable",
             "virtual": true,
             "visibility": "public"
           }
         ],
-        "scope": 7641,
+        "scope": 7533,
         "src": "226:468:129"
       }
     ],
@@ -1167,7 +1167,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-05-11T00:32:50.620Z",
+  "updatedAt": "2021-05-18T16:10:55.012Z",
   "devdoc": {
     "details": "ERC721 Token that can be irreversibly burned (destroyed).",
     "kind": "dev",
